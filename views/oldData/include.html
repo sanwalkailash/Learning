@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body ng-app="test">
+<all-template-include></all-template-include>
+<script>
+    var app=angular.module("test",[]);
+    app.directive("allTemplateInclude",function()
+    {
+
+        return
+        {
+               restrict:"E",
+              templateUrl:  "template1.html"
+
+        };
+
+
+    });
+
+</script>
+</body>
+</html>

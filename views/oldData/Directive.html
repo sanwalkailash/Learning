@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body ng-app="ram">
+<chalk-digital></chalk-digital>
+<script>
+    var app=angular.module("ram",[]);
+    app.directive("chalkDigital",function()
+    {
+       return {
+                restrict:"E",
+                templateUrl:"module.html"
+    };
+    });
+
+    app.controller("myctrl",function($scope){
+
+        $scope.username="varun";
+        $scope.password="********";
+
+
+    });
+    </script>
+
+</body>
+</html>

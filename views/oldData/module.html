@@ -1,0 +1,19 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body ng-app="test">
+<div  ng-controller="myctrl">
+    {{username+""+password}}
+</div>
+<script>
+    angular.module("test",[]).controller("myctrl",function($scope){
+
+        $scope.username="varun";
+        $scope.password="********";
+
+
+    });
+</script>
+</body>
+</html>

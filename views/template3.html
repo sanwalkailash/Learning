@@ -1,0 +1,18 @@
+<div class="form">
+    <form action="chalk.jsp" name="mydata" method="post" onsubmit="return validate()">
+        <h1><marquee>Create your id here</marquee></h1>
+        <hr><br>
+        <table >
+            <tr><td class="a" >user name:</td><td colspan="2"  ><input type="text" ng-model="user" size="36" required></td></tr>
+            <tr><td class="a" >password:</td><td colspan="2" ><input type="password" ng-model="pass" size="36" onkeydown="strength()" onkeyup="strength()" required>
+                <br>strength:<span id="demo" >no strength</span></td></tr>
+            <tr><td class="a">gender:</td><td colspan="2"><input type="radio" ng-model="gender" value="male">male&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" ng-model="gender" value="female">female</td></tr>
+            <tr><td class="a" >Qualification:</td><td c><input type="checkbox" ng-model="tenth" value="10th">10th&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" ng-model="twelve" value="12th">12th</td></tr>
+            <tr><td></td><td colspan="2"><input type="submit" value="register"></td></tr>
+        </table>
+
+    </form>
+       <script>
+
+           </script>
+</div>
